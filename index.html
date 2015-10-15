@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 5</title>
+    <script src="js/script.js"></script>
+    <script>
+        // Problem 5
+        document.addEventListener("DOMContentLoaded", function() {
+            uniqueButton2.addEventListener("click", function() {
+            alert("Problem 3 has been clicked");	
+            }, false);
+        }, false);
+    </script>
+</head>
+<body>
+<!--    Problem 1//////////////////////////////////////////-->
+    <p><button onclick="writeMessage()">Problem 1</button></p>
+    
+    <script>
+//////////Problem 1 Script ///////////////////////////////////
+//    function writeMessage() {
+//    window.alert("Problem 1 has been clicked");
+//    }
+    </script>
+    
+<!--    Problem 2//////////////////////////////////////////-->    
+    <p><button id="uniqueButton1">Problem 2</button></p>
+    
+    <script>
+//////////Problem 2 Script ///////////////////////////////////
+//        var myClicker = document.getElementById("uniqueButton1");
+//        myClicker.onclick = function () {
+//        window.alert("Problem 2 has been clicked");
+//        };
+    </script>
+    
+<!--    Problem 3//////////////////////////////////////////-->    
+    <p><button id="uniqueButton2">Problem 3</button></p>  
+    
+    <script>
+        
+//////////Problem 3 Script ///////////////////////////////////
+//        uniqueButton2.addEventListener("click", writeMessage2, false);
+//        function writeMessage2() {	
+//            alert("Problem 3 has been clicked");
+//        }
+        
+//////////Problem 4 Script ///////////////////////////////////
+//        uniqueButton2.addEventListener("click", function() {                        alert("Problem 3 has been clicked"); }, false);
+    </script>
+    
+<!--    Problem 6//////////////////////////////////////////-->    
+    <p><a href="http://www.google.com" id="redirect">Visit Google</a></p>
+    
+    <script>
+//////////Problem 6 Script ///////////////////////////////////        
+//        redirect.addEventListener("click", function(event) { 
+//        event.preventDefault();
+//        alert("You clicked the link")
+//        });
+    </script>
+    
+<!--    Problem 7//////////////////////////////////////////-->       
+    <form>
+        <textarea id="boxText">
+            
+        </textarea><br>
+        <button id="pressMe">Press Me</button>
+    </form>
+    <script>
+//////////Problem 7 Script ///////////////////////////////////
+//        pressMe.addEventListener("click", function(event) { 
+//        event.preventDefault();
+//        var pressMe = document.getElementById("pressMe");
+//            pressMe.disabled = true;
+//        var box = document.getElementById("boxText");
+//            alert(box.value);
+//
+//        });
+    </script>
+    
+<!--    Problem 8//////////////////////////////////////////-->
+      
+   <p><button id="openNewPage">Open New Page</button></p>
+   <script>
+//////////Problem 8 Script ///////////////////////////////////
+//        openNewPage.addEventListener("click", function(event) { 
+//        event.preventDefault();
+//        var openNewPage = document.getElementById("openNewPage");
+//        window.open('newpage.html','gg','width=300,height=300,resizable=yes');
+//        });
+    </script>
+   
+<!--    Problem 9//////////////////////////////////////////-->   
+   <p><button id="btnStart">Start</button> <button id="btnStop">Stop</button></p>
+   
+   <script>
+       
+       btnStart.addEventListener("click", jsFun, false);
+       
+       function jsFun() {
+            shit = setInterval(boo, 2000);    
+       }
+       
+       function boo() { 	
+           console.log('Learning JavaScript is fun!'); 
+       }
+
+       btnStop.addEventListener("click", jsSuks, false);
+       
+       function jsSuks() { 	
+            clearInterval(shit);    
+       }
+       
+
+   </script>
+
+<!--    Problem 10//////////////////////////////////////////-->        
+<!-- 10.	Add a drop down list to a web page. Populate the drop down list with 4 items. Add a button next to the drop down list and set the text to “Select”. When the user clicks the button, the item selected in the drop down list should appear within an alert box.-->
+   
+    
+<select id="myList">
+<option id="one" value="volvo">Volvo</option>
+<option id="two" value="saab">Saab</option>
+<option id="three" value="opel">Opel</option>
+<option id="four" value="audi">Audi</option>
+</select>
+<button id="select">Select</button>
+
+<script>
+//////////Problem 10 Script ///////////////////////////////////
+//    select.addEventListener("click", doThis, false);  
+//    function doThis() {
+//        var e = document.getElementById("myList");
+//        var strUser = e.options[e.selectedIndex].text;
+//        alert(strUser);
+//    }
+    
+</script>
+    
+    
+</body>
+</html>

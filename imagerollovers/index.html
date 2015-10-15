@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Assignment 5, Part 3 - Image Rollovers</title>
+<script>
+
+//02: Helper function to retrienve the ID of each image
+    function getImage(imageID) {
+        document.getElementById(this.id);
+        return;
+    }
+console.log(getImage.id);
+//03: Rollover function that performs the rollover effect on each image
+    //04: Create a copy of this function and store it in a variable
+    
+function rollover(imageID, newImageURL) {
+    var target = {
+        newImageURL: "home_over.png",
+        imageID: getImage.value,
+        oldImageURL: this.image.src
+    }
+    document.getElementById(imageID).src = newImageURL;
+    
+//        imageID = document.getElementById(this.id);
+//        newImageURL = "";
+    }
+	
+	//05: Create 3 new properties including newImageURL, image, and oldImageURL
+    	//06: Store the new image URL in a property
+    	//07: Store the old image's ID in a property
+    	//08: Store the old image URL in a property
+
+    //09, 10, 11: Attach onmouseover and onmouseout event handlers to target.image property
+//target.image = getElementById();    
+    
+target.image.onmouseover = function(newImage) {
+    target.image.src = newImageURL;
+    var image1 = newImage("image1", "home_oover.png");
+    var image2 = newImage("image2", "aboutus_oover.png");
+    var image3 = newImage("image3", "solutions_oover.png");
+    var image4 = newImage("image4", "supports_oover.png");
+    var image5 = newImage("image5", "contactus_oover.png");
+        
+    
+ }
+target.image.onmouseout = function() {
+    target.image.src = oldImageURL;
+}
+
+//12, 13: Event handler to create 5 new Rollover objects once the page loads
+window.addEventListener("load", init, false);
+</script>
+</head>
+
+<body>
+	<!-- 01 -->
+    <img id="image1" src="home.png">
+    <img id="image2" src="aboutus.png">
+    <img id="image3" src="solutions.png">
+    <img id="image4" src="support.png">
+    <img id="image5" src="contactus.png">
+</body>
+</html>
